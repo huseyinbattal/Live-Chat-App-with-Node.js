@@ -1,4 +1,4 @@
-const port = process.env.PORT;
+const port = "https://live-chat-app-with-node.herokuapp.com/"
 const socket = io.connect(`${port}`);
 
 
