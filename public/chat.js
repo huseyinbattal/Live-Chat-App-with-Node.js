@@ -1,9 +1,9 @@
 //herokuda kullanılacak port.
-//const port = "https://live-chat-app-with-node.herokuapp.com/";  
+const port = "https://live-chat-app-with-node.herokuapp.com/";  
 
 
 //Yerelde kullanılacak port.
-const port = "http://localhost:3000/"; 
+//const port = "http://localhost:3000/"; 
 
 const socket = io.connect(`${port}`);
 
