@@ -54,7 +54,7 @@ h2 {
 }
 
 #output strong {
-  color: darkslategrey;
+  color: darkslateblue;
   font-size: 25px;
 }
 
@@ -81,4 +81,16 @@ button {
 
 button:hover{
   background-color: green;
+}
+
+input:focus {
+  background-color: lemonchiffon;
+}
+
+#sender:focus{
+  color: dodgerblue;
+}
+
+#sender{
+  color: darkslateblue;
 }
