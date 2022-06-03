@@ -14,6 +14,16 @@ submitBtn.addEventListener("click", () => {
     sender.disabled = true;
 });
 
+message.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        socket.emit("chat", {
+            message: message.value,
+            sender: sender.value,
+          });
+            sender.disabled = true;
+    }
+});
+
 socket.on("chat", (data) => {
   feedback.innerHTML = "";
   output.innerHTML +=
