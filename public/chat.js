@@ -1,5 +1,5 @@
 const port = process.env.PORT;
-const socket = io.connect(port);
+const socket = io.connect(`${port}`);
 
 
 const sender = document.getElementById("sender");
