@@ -1,4 +1,6 @@
-const socket = io.connect("http://localhost:3000");
+const port = process.env.PORT;
+const socket = io.connect(port);
+
 
 const sender = document.getElementById("sender");
 const message = document.getElementById("message");
